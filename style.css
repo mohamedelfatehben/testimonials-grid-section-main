@@ -1,0 +1,141 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  font-family: sans-serif;
+  background-color: #edf2f8;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 50px auto;
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px 25px;
+}
+@media (max-width: 426px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.content {
+  box-shadow: -5px 4px 38px #0000004d;
+}
+.container .content:nth-child(5) {
+  grid-column-start: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: white;
+}
+.container .content:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 80% 0;
+  background-color: #733fc8;
+  color: ;
+}
+.container .content:nth-child(2) {
+  background-color: #49556b;
+}
+.container .content:nth-child(3) {
+  grid-column-end: 2;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: white;
+}
+.container .content:nth-child(4) {
+  grid-column-end: 4;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: #18202d;
+}
+.container .content:nth-child(3) div:nth-child(2) p:nth-child(1),
+.container .content:nth-child(5) div:nth-child(2) p:nth-child(1) {
+  color: darkslategray;
+}
+.container .content:nth-child(1) footer p,
+.container .content:nth-child(2) footer p,
+.container .content:nth-child(4) footer p,
+.container .content:nth-child(1) footer H5,
+.container .content:nth-child(2) footer H5,
+.container .content:nth-child(4) footer H5 {
+  color: rgba(255, 255, 255, 0.897);
+}
+footer p {
+  font-size: 10px;
+  color: #777;
+  line-height: 1.6;
+  padding-top: 20px;
+  background-color: transparent;
+}
+div div {
+  background-color: transparent;
+}
+div > p {
+  font-size: 10px;
+  background-color: transparent;
+}
+h5 {
+  padding-top: 20px;
+}
+.content header {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+}
+.content header > div:nth-child(2) {
+  margin-left: 20px;
+  background-color: transparent;
+}
+.content {
+  padding: 25px;
+  border-radius: 5px;
+}
+img {
+  width: 24px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 0.5px solid white;
+}
+.content header > div p:nth-child(1) {
+  font-weight: 300;
+  color: white;
+  font-size: 11px;
+}
+.content header > div p:nth-child(2) {
+  color: rgb(177, 174, 174);
+}
+h5 {
+  background-color: transparent;
+}
+p {
+  background-color: transparent;
+}
+footer {
+  background-color: transparent;
+}
+footer.footer a {
+  text-decoration: none;
+  color: tomato;
+}
+
+.paminos {
+  color: tomato;
+  font-weight: 600;
+}
+
+footer.footer {
+  font-size: 13px;
+  text-align: center;
+  font-weight: 500;
+  color: darkgrey;
+  margin-top: 44px;
+}
